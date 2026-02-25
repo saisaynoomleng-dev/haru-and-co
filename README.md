@@ -2,7 +2,7 @@
 
 ---
 
-## Tech Stacks
+## Tech Stack
 
 - Next.js
 - TailwindCSS
