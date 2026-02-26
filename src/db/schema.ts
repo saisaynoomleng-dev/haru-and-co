@@ -196,6 +196,8 @@ export const CareerTable = t.pgTable('careers', {
     .timestamp('posted_at', { withTimezone: true, mode: 'date' })
     .notNull(),
   isDeleted: t.boolean('is_deleted').notNull().default(false),
+  location: t.varchar('location', { length: 100 }).notNull(),
+  isRemote: t.boolean('is_remote').notNull().default(false),
   ...timestamp,
 });
 

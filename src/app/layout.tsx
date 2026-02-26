@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { archivo, inter, roboto } from '@/lib/fonts';
+import { SanityLive } from '@/sanity/lib/live';
 
 export const metadata: Metadata = {
   title: {
@@ -21,6 +22,7 @@ export default function RootLayout({
         className={`${roboto.variable} ${inter.variable} ${archivo.variable} antialiased`}
       >
         {children}
+        <SanityLive />
       </body>
     </html>
   );

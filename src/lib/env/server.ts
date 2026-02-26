@@ -9,6 +9,8 @@ export const env = createEnv({
     SANITY_STUDIO_PROJECT_ID: z.string(),
     SANITY_STUDIO_DATASET: z.string(),
     DATABASE_URL: z.string().startsWith('postgresql://'),
+    SANITY_PRODUCT_WEBHOOK_SECRET: z.string(),
+    SANITY_CAREER_WEBHOOK_SECRET: z.string(),
   },
   experimental__runtimeEnv: process.env,
 });
