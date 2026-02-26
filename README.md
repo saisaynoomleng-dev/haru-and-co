@@ -27,6 +27,8 @@
 ## Project Timeline
 
 - 2/24/2026 -> Project Research, Set up Projects
+- 2/25/2026 -> CMS setup, DB setup, setup webhooks
+- 2/26/2026 ->
 
 ---
 

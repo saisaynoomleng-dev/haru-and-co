@@ -42,13 +42,15 @@ export const productType = defineType({
     defineField({
       name: 'category',
       title: 'Product Category',
-      type: 'productCategory',
+      type: 'reference',
+      to: [{ type: 'productCategory' }],
       validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'brand',
       title: 'Product Brand',
-      type: 'productBrand',
+      type: 'reference',
+      to: [{ type: 'productBrand' }],
       validation: (rule) => rule.required(),
     }),
     defineField({
@@ -66,7 +68,8 @@ export const productType = defineType({
     defineField({
       name: 'gender',
       title: 'Product Gender',
-      type: 'productGender',
+      type: 'reference',
+      to: [{ type: 'productGender' }],
       validation: (rule) => rule.required(),
     }),
     defineField({

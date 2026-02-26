@@ -38,6 +38,19 @@ export const careerType = defineType({
       type: 'blockContent',
       validation: (rule) => rule.required(),
     }),
+    defineField({
+      name: 'location',
+      title: 'Job Location',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'isRemote',
+      title: 'Is Remote Available',
+      type: 'boolean',
+      validation: (rule) => rule.required(),
+      initialValue: false,
+    }),
   ],
   preview: {
     select: {
