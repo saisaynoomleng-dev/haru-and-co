@@ -8,6 +8,7 @@ export const env = createEnv({
     SANITY_READ_TOKEN: z.string(),
     SANITY_STUDIO_PROJECT_ID: z.string(),
     SANITY_STUDIO_DATASET: z.string(),
+    DATABASE_URL: z.string().startsWith('postgresql://'),
   },
   experimental__runtimeEnv: process.env,
 });
